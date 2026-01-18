@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 .inter-font{
   font-family: "Inter", sans-serif;
@@ -23,3 +23,38 @@ body{
     padding-left: 200px;
     padding-right: 200px;
 }
+
+/* banner section  */
+
+.hero{
+    width: auto;
+    background-image: url(../media/hero-bg.png);
+    background-position: center;
+    background-position: cover;
+    background-repeat: no-repeat;
+    height: 760px;
+    
+}
+
+.hero-img{
+    justify-self: center;
+    position: relative;
+ }
+
+ .circle{
+    padding-top: 101px;
+ }
+.icon{
+    position:absolute ;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 69px;
+
+}
+.hero-info{
+    color: white;
+}
+
+ 
