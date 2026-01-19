@@ -118,7 +118,7 @@ header{
     width: auto;
     background-image: url(../media/hero-bg.png);
     background-position: center;
-    background-position: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 760px;
     
@@ -356,7 +356,45 @@ header{
     border: 1px solid rgba(83, 60, 114, 1);
     padding: 10px;
 }
+
+
 /* footer */
+footer{
+    border-radius: 50%;
+    border: 1px solid rgba(83, 60, 114, 1)
+}
 .footer-info{
+    height: 412px;
     text-align: center;
+    align-content: center;
+    justify-content: center;
+    background-image: url(../media/footer-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.footer-info>h1{
+    font-size: var(--font-size-h1);
+    font-weight: 700;
+}
+.footer-info>p{
+    font-size: var(--font-size-p);
+    font-weight: var(--font-weight-p);
+    margin-top: 32px;
+}
+.footer-links{
+    justify-self: center;
+    align-items: center;
+    gap: 40px;
+}
+.last-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 32px;
+}
+.footer-social{
+    font-size: var(--font-size-p);
 }
