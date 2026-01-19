@@ -118,7 +118,7 @@ body{
 /* banner section  */
 
 .hero{
-    width: auto;
+    width: 100%;
     background-image: url(../media/hero-bg.png);
     background-position: center;
     background-size: cover;
@@ -181,32 +181,8 @@ body{
 /* about section   */
 
 
-.about-section{
-    padding: 50px 200px 120px;
-}
-.about-info>h2{
-    font-size: var(--font-size-h2);
-    font-weight: 500;
-}
-.about-info>p{
-    font-size: var(--font-size-p);
-    font-weight: var(--font-weight-p);
-    margin-top: 10px;
-}
-.overall-h2>h2{
-    font-size: var(--font-size-h2);
-    color: #00FF88;
-    font-weight: 700;
-}
-.overall-h2>p{
-    font-size: var(--font-size-p);
-    font-weight: var(--font-weight-p);
-    white-space: nowrap;
-}
-.overall-info{
-    gap: 120px;
-    margin-top: 160px;
-}
+
+
 
 
 /* techwave section  */
@@ -220,7 +196,7 @@ body{
 .techwave-info{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    /* grid-auto-rows: 1fr; */
+    
     grid-gap: 20px;
     grid-template-areas: 
     'a b b'
@@ -387,18 +363,28 @@ footer{
 
 /* responsive  */
 @media screen and (max-width:576px) {
-    .about-section{
-    padding:40px 20px 40px 20px;
+    *{
+        max-width: 440px;
     }
+    .nav-container{
+        padding-left: 20px;
+        padding-right: 20px;
+        justify-content: space-between;
+        height: 60px;
+    }
+    .hero{
+    width: 100%;
+    background-image: url(../media/hero-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     
-    .overall-info{
-       display: grid;
-       grid-template-columns: repeat(2, 1fr);
-       
-       margin: 20px 40px 20px 50px;
-       gap: 40;
-       
-    }
+    
+}
+
+.hero-img{
+    
+}
     .techwave{
         margin-top: 80px;
     }
@@ -429,11 +415,16 @@ footer{
         text-align: center;
         margin: 0;
         padding: 10px;
-        
-     }
+    }
+
     .host-img{
     width: 100%;
-    
     padding: 24px 125px 16px 175px ;
-} 
+    }
+    .footer-links{
+        display: grid;
+        /* grid-template-columns: repeat(auto-fit, minmax(50px,1fr)); */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
 }
