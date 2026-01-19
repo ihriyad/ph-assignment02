@@ -85,12 +85,15 @@ body{
     
 }
 
-header{
+/* header{
     width: 100%;
-}
+} */
+
+
 /* navbar  */
 
 .nav-container{
+    
     padding-left: 130px;
     padding-right: 170px;
 }
@@ -216,8 +219,8 @@ header{
 
 .techwave-info{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    /* grid-auto-rows: 1fr; */
     grid-gap: 20px;
     grid-template-areas: 
     'a b b'
@@ -229,11 +232,7 @@ header{
 }
 
 .box-1{
-    grid-area: a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
+    grid-area: a; 
 }
 .box-2{
     grid-area: b;
@@ -249,31 +248,17 @@ header{
 }
 
 
-
 .techwave-box{
     border: 1px solid rgba(53, 17, 101, 0.4);
     background-color: rgba(53, 17, 101, 0.4);
     border-radius: 20px;
     padding: 20px;
-    width: 100%;
-
-    
+    width: 100%;  
 }
 
-.one>h3{
-   font-size: var(--font-size-h3);
-   font-weight: var(--font-weight-h3);
-    white-space: nowrap; 
-}
-.one>p{
-   font-size: var(--font-size-p);
-   font-weight: var(--font-weight-p);
-   
-}
 .techwave-box>h3{
     font-size: var(--font-size-h3);
-    font-weight: var(--font-weight-h3);
-    white-space: nowrap;
+    font-weight: var(--font-weight-h3); 
 }
 .techwave-box>p{
     font-size: var(--font-size-p);
@@ -373,6 +358,7 @@ footer{
     background-size: cover;
     background-repeat: no-repeat;
     
+    
 }
 
 .footer-info>h1{
@@ -397,4 +383,57 @@ footer{
 }
 .footer-social{
     font-size: var(--font-size-p);
+}
+
+/* responsive  */
+@media screen and (max-width:576px) {
+    .about-section{
+    padding:40px 20px 40px 20px;
+    }
+    
+    .overall-info{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       
+       margin: 20px 40px 20px 50px;
+       gap: 40;
+       
+    }
+    .techwave{
+        margin-top: 80px;
+    }
+    .techwave-info{
+        grid-template-areas: 
+    'a'
+    'b'
+    'c'
+    'd'
+    'e';
+    padding: 10px;
+    
+    }
+
+
+    .featured-info{
+    flex-direction: column; 
+    padding: 20px;
+    gap: 16px;
+    }
+    .feature-card{
+        width: auto;
+    }
+
+    .the-host{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+        
+     }
+    .host-img{
+    width: 100%;
+    
+    padding: 24px 125px 16px 175px ;
+} 
 }
