@@ -61,3 +61,43 @@ body{
 .about-section{
     padding: 50px 200px 120px;
 }
+
+
+/* techwave section  */
+.tectwave-info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3,1fr); */
+    grid-template-areas: 
+    'a b b'
+    'a c c'
+    'd d e';
+
+}
+
+.box-1{
+    grid-area: a;
+    
+}
+.box-2{
+    grid-area: b;
+}
+.box-3{
+    grid-area: c;
+}
+.box-4{
+    grid-area: d;
+}
+.box-5{
+    grid-area: e;
+}
+
+
+
+.techwave-box{
+    border: 2px solid indianred;
+}
+/* footer */
+.footer-info{
+    text-align: center;
+}
