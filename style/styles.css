@@ -81,12 +81,10 @@ body{
     color: #00FF88;
     padding: 10px;
     font-size: 1.5rem;
+    align-items: center;
     
 }
 
-.secondary-btn>img{
-    vertical-align: center;
-}
 header{
     width: 100%;
 }
@@ -319,7 +317,45 @@ header{
     align-items: center;
     margin-top: 12px;
 }
+ /* the host section  */
+ .the-host{
+    margin: 40px 200px 120px 200px;
+    background-color: rgba(53, 17, 101, 0.4) ;
+    border-radius: 10px;
+    align-items: center;
+    
 
+}
+.host-img{
+    width: 100%;
+    padding: 40px;
+}
+.host-info>h2{
+    font-size: var(--font-size-h2);
+    text-align: center;
+    font-weight: var(--font-weight-h2);
+    
+ }
+.host-about>h3{
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-h3);
+    padding: 10px;
+}
+
+.host-about>p{
+    font-size: var(--font-size-p);
+    font-weight: var(--font-size-p);
+    padding: 10px;
+}
+.host-links{
+    align-items: center;
+    gap: 16px;
+}
+.social-links{
+    border-radius: 50%;
+    border: 1px solid rgba(83, 60, 114, 1);
+    padding: 10px;
+}
 /* footer */
 .footer-info{
     text-align: center;
