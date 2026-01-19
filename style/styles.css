@@ -173,26 +173,58 @@ header{
     margin-top: 30px;
 
 }
+
 /* about section   */
+
+
 .about-section{
     padding: 50px 200px 120px;
+}
+.about-info>h2{
+    font-size: var(--font-size-h2);
+    font-weight: 500;
+}
+.about-info>p{
+    font-size: var(--font-size-p);
+    font-weight: var(--font-weight-p);
+    margin-top: 10px;
+}
+.overall-h2>h2{
+    font-size: var(--font-size-h2);
+    color: #00FF88;
+    font-weight: 700;
+}
+
+.overall-info{
+    gap: 120px;
+    margin-top: 160px;
 }
 
 
 /* techwave section  */
-.tectwave-info{
+
+.techwave>h2{
+    font-size: var(--font-size-h2);
+    text-align: center;
+}
+
+.techwave-info{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-rows: repeat(3,1fr); */
+    grid-auto-rows: 1fr;
+    grid-gap: 20px;
     grid-template-areas: 
     'a b b'
     'a c c'
     'd d e';
+    padding: 40px 200px 120px 200px;
+    
 
 }
 
 .box-1{
     grid-area: a;
+
     
 }
 .box-2{
@@ -212,6 +244,9 @@ header{
 
 .techwave-box{
     border: 2px solid indianred;
+    background-color: rgba(53, 17, 101, 0.4);
+    
+    
 }
 /* footer */
 .footer-info{
