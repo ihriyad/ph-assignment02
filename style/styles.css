@@ -24,6 +24,7 @@ body{
   --font-size-h1: 6rem;
   --font-size-h2: 4.8rem; 
   --font-size-h3: 3.8rem; 
+  --font-size-h4: 2rem;
   --font-size-p : 1.6rem;
   --font-weight-h2:600;
   --font-weight-h3:500;
@@ -279,6 +280,46 @@ header{
 .techwave-box>p{
     font-size: var(--font-size-p);
 }
+
+/* features option  */
+
+.features>h2{
+    font-size: var(--font-size-h2);
+    text-align: center;
+    font-weight: var(--font-weight-h2);
+}
+.featured-info{
+    padding: 40px 200px 120px 200px;
+    gap: 20px;
+}
+.feature-card{
+    height: 440px;
+    width: 380px;
+    border: 1px solid rgba(53, 17, 101, 0.4);
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 20px;
+}
+.feature-card>h3{
+    font-size: var(--font-size-h4);
+    
+}
+.feature-card>p{
+    font-size: var(--font-size-p);
+    height: 72px;
+}
+.youtube-video{
+    border-radius: 20px;
+    padding: 10px;
+}
+.featured-icon{
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    color: #00FF88;
+    align-items: center;
+    margin-top: 12px;
+}
+
 /* footer */
 .footer-info{
     text-align: center;
